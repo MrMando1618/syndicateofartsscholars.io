@@ -65,25 +65,13 @@
 	var $slideshow = $('#events-slideshow');
 
 	if ($slideshow.length > 0) {
-		var images = [
-			'images/SAS Club members.png',
-			'images/Party E.png',
-
-			'images/Party E.png'
-		];
-
-		var current = 0;
-
 		setInterval(function () {
-			current = (current + 1) % images.length;
+			var $active = $slideshow.find('img.active');
+			var $next = ($active.next('img').length > 0) ? $active.next('img') : $slideshow.find('img:first');
 
-			// Using template literals to safely wrap paths with spaces
-			//var imageUrl = images[current];
-			//$slideshow.css('background-image', 'url("' + imageUrl + '")');
-			// Correctly using template literals to safely wrap paths with spaces
-			const imageUrl = images[current];
-			$slideshow.css('background-image', `url("${imageUrl}")`);
-		}, 3000); // Changes every 3 seconds
+			$active.removeClass('active');
+			$next.addClass('active');
+		}, 5000); // Changes every 5 seconds
 	}
 
 	// This Month Showcase Carousel (Glide.js)
