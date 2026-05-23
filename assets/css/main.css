@@ -193,8 +193,10 @@ body,
 input,
 textarea,
 select {
-	font-family: 'Source Sans Pro';
-	font-weight: 300;
+	font-family: "Merriweather Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 	color: #5d5d5d;
 	font-size: 14pt;
 	line-height: 1.75em;
@@ -1820,6 +1822,13 @@ button.large,
 
 }
 
+/* Blog section specific image sizing */
+#main .row .box .image.featured img {
+	height: 300px;
+	width: 80%;
+	object-fit: cover;
+}
+
 /* Individual GALLERY Image Resizing */
 .showcase-item.item-1 {
 	width: 90%;
@@ -2227,10 +2236,11 @@ ul.social li a.fa-google-plus:hover {
 
 #header h1 {
 	color: #FFD700;
-	/* Example: Gold color */
-	font-weight: 900;
-	font-size: 3.1em;
-	/* Slightly reduced size */
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2.5em;
 	letter-spacing: -0.035em;
 	line-height: 1;
 	margin: 0;
@@ -2239,7 +2249,7 @@ ul.social li a.fa-google-plus:hover {
 #header .logo {
 	vertical-align: middle;
 	margin: -0.1em 0.5em 0 0;
-	width: 150px;
+	width: 100px;
 	height: auto;
 	background: #ffffff;
 	border: 2px solid #4a4949;
@@ -2478,6 +2488,12 @@ ul.social li a.fa-google-plus:hover {
 	border-radius: 8px;
 	border: 4px solid #dddddd;
 	overflow: hidden;
+	margin-bottom: 2em;
+}
+
+.gallery-footer {
+	margin-top: 1.5em;
+	width: 140%;
 }
 
 #events-slideshow img {
