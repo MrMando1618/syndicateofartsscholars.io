@@ -2226,12 +2226,12 @@ ul.social li a.fa-google-plus:hover {
 	position: relative;
 	background: #c40808;
 	border-bottom: solid 0.5px #ccc;
-	padding: 20px;
-	text-align: center;
-	padding: 15px 50px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	/* Changed to around to bring items naturally closer */
 	align-items: center;
+	padding: 15px 12%;
+	/* Increased horizontal padding to squeeze content to the middle */
 }
 
 #header h1 {
@@ -3089,9 +3089,15 @@ ul.social li a.fa-google-plus:hover {
 	#header {
 		text-align: center;
 		padding: 2em 0;
+		padding: 1em 0;
+	}
+
+	#header .container {
 		display: flex;
 		justify-content: flex-start;
 		padding: 1em 20px;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	#header h1 {
