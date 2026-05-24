@@ -2228,10 +2228,8 @@ ul.social li a.fa-google-plus:hover {
 	border-bottom: solid 0.5px #ccc;
 	display: flex;
 	justify-content: space-around;
-	/* Changed to around to bring items naturally closer */
 	align-items: center;
 	padding: 15px 12%;
-	/* Increased horizontal padding to squeeze content to the middle */
 }
 
 #header h1 {
@@ -2240,7 +2238,7 @@ ul.social li a.fa-google-plus:hover {
 	font-optical-sizing: auto;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 2.5em;
+	font-size: 1.5em;
 	letter-spacing: -0.035em;
 	line-height: 1;
 	margin: 0;
@@ -2371,9 +2369,7 @@ ul.social li a.fa-google-plus:hover {
 	background-color: rgba(34, 30, 31, 0.98);
 	display: inline-block;
 	padding: 2.5em 3em;
-	/* First value is vertical, second is horizontal */
 	max-width: 600px;
-	/* Limits how wide the black box can grow */
 	border-radius: 5px;
 }
 
@@ -2494,6 +2490,15 @@ ul.social li a.fa-google-plus:hover {
 .gallery-footer {
 	margin-top: 1.5em;
 	width: 140%;
+}
+
+.gallery-footer .button {
+	background-color: #c40808;
+	color: #ffff;
+}
+
+.gallery-footer .button:before {
+	opacity: 1;
 }
 
 #events-slideshow img {
